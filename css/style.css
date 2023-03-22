@@ -18,19 +18,19 @@ header {
   align-items: center;
   position: relative;
   width: 100%;
-  height: 109px;
+  height: 15%;
 }
 .logo {
   display: flex;
   position: absolute;
-  width: 61px;
-  height: 19px;
-  top: 30px;
+  width: 4rem;
+  height: auto;
+  top: 3rem;
 }
 nav {
   display: flex;
   position: absolute;
-  gap: 2rem;
+  gap: 3rem;
   top: 0;
   right: 0;
 }
@@ -38,7 +38,7 @@ nav a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  height: 35px;
+  height: 3rem;
   background: linear-gradient(
       to bottom,
       #0065fc 0%,
@@ -67,7 +67,7 @@ body {
 .main-container {
   width: 100%;
   max-width: 1440px;
-  padding: 0 50px;
+  padding: 0 3rem;
   box-sizing: border-box;
 }
 .titre {
@@ -86,8 +86,8 @@ body {
 .card {
   background-color: white;
   border-radius: 20px;
-  padding: 5px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  padding: 0.3rem;
+  filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
@@ -109,58 +109,61 @@ input {
   outline: transparent;
 }
 
-/****** Recherche et Filtre ***********/
+/****** Infos, Recherche et Filtre ***********/
+
+/****INFOS*****/
+
 .infos {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  margin: 0 0 35px 0;
+  gap: 0.5rem;
+  margin: 0 0 2.5rem 0;
 }
 
 .searchbar-filtre {
   display: flex;
   flex-direction: column;
-  margin: 0 0 35px 0;
+  margin: 0 0 2.5rem 0;
 }
+
+/****** Recherche *****/
 
 .searchbar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding: 0px;
-  width: 377px;
-  height: 49px;
-  margin: 0 0 35px 0;
+  padding: 0;
+  width: 100%;
+  height: 3rem;
+  margin: 0 0 2.5rem 0;
 }
-.position {
+.icone-position {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 49px;
+  width: 3rem;
+  height: 3rem;
   background: #f2f2f2;
   border: 1px solid #f2f2f2;
-  border-radius: 15px 0px 0px 15px;
+  border-radius: 15px 0 0 15px;
   color: black;
   font-size: 18px;
 }
 
 #recherche {
-  height: 46px;
-  width: 195px;
+  height: 2.8rem;
+  width: 15rem;
   background: #ffffff;
   border: 1px solid #f2f2f2;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  text-align: center;
 }
 
 .bouton-recherche {
-  width: 132px;
-  height: 49px;
+  width: 8rem;
+  height: 3rem;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -169,39 +172,42 @@ input {
   color: #ffffff;
   background-color: #0065fc;
   border: 1px solid #0065fc;
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 0 15px 15px 0;
 }
+
+/******Filtre******/
 
 .barre-filtres {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 .titre-filtres {
   font-weight: 700;
   font-size: 18px;
 }
 
-.boutton-filtre {
+.barre-filtres button {
   display: flex;
   align-items: center;
   background: none;
-  height: 50px;
-  padding: 4px 19px 4px 19px;
+  height: 3rem;
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
   border: 2px solid #d9d9d9;
   border-radius: 25px;
   cursor: pointer;
   font-weight: 700;
   font-size: 17px;
-  gap: 10px;
+  gap: 0.5rem;
 }
-.boutton-filtre:hover {
+.barre-filtres button:hover {
   background-color: #deebff;
 }
-.icone-filtre {
+.barre-filtres button i {
   font-size: 22px;
 }
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
@@ -211,7 +217,7 @@ input {
 .hebergements-and-populaires section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
-  padding: 30px;
+  padding: 2rem;
   box-sizing: border-box;
 }
 
@@ -233,19 +239,19 @@ input {
 
 .populaires-cards .card {
   display: flex;
-  margin-top: 33px;
+  margin-top: 2rem;
 }
 
 .populaires-cards img {
   width: 33%;
-  height: 134px;
+  height: 8rem;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
 .populaires-cards .card-content {
   width: 67%;
-  padding-left: 15px;
+  padding-left: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -253,8 +259,8 @@ input {
 }
 
 .populaires-cards .card-title {
-  margin-top: 10px;
-  margin-bottom: 4px;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
 }
 
 .populaires-cards .card-subtitle {
@@ -262,7 +268,7 @@ input {
 }
 
 .populaires-cards .card-rating {
-  margin-bottom: 5px;
+  margin-bottom: 0.4rem;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
