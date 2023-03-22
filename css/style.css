@@ -164,8 +164,8 @@ input {
 #recherche::placeholder {
   font-weight: 300;
   font-size: medium;
-  opacity: 0.5;
-  color: F2F2F2;
+  opacity: 0.3;
+  color: black;
 }
 
 .bouton-recherche {
