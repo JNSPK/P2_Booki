@@ -429,6 +429,12 @@ footer section {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  .card-title {
+    font-size: small;
+  }
+  .card-subtitle {
+    font-size: x-small;
+  }
   .barre-filtres {
     flex-direction: column;
     align-items: flex-start;
@@ -483,13 +489,6 @@ footer section {
 
   .activites-cards .card-content {
     height: 25%;
-  }
-
-  .card-title {
-    font-size: small;
-  }
-  .card-subtitle {
-    font-size: x-small;
   }
 }
 
@@ -693,6 +692,6 @@ footer section {
     flex-direction: column;
   }
   footer section {
-    width: 100%;
+    width: 75%;
   }
 }
