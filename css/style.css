@@ -555,7 +555,13 @@ footer section {
   }
   .searchbar {
     position: relative;
-    justify-content: center;
+    margin-right: 0.5rem;
+  }
+  #recherche {
+    width: 16rem;
+  }
+  #recherche::placeholder {
+    font-size: 15px;
   }
 
   .bouton-recherche {
@@ -566,9 +572,9 @@ footer section {
     display: flex;
     width: 3rem;
     height: 3rem;
-    font-size: 18px;
+    font-size: 17px;
     position: absolute;
-    right: -1rem;
+    right: -0.5rem;
     align-items: center;
     justify-content: center;
     background-color: #0065fc;
