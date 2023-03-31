@@ -9,6 +9,7 @@
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
+  scroll-behavior: smooth;
 }
 
 .fa-solid {
@@ -20,7 +21,7 @@ header {
   align-items: center;
   position: relative;
   width: 100%;
-  height: 15%;
+  height: 10rem;
 }
 .logo {
   display: flex;
@@ -122,6 +123,9 @@ input {
   flex-direction: column;
   gap: 0.5rem;
   margin: 0 0 2.5rem 0;
+}
+.infos .description {
+  margin-bottom: 2rem;
 }
 
 .searchbar-filtre {
@@ -357,10 +361,6 @@ input {
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-
-.activites section {
-  display: flex;
   flex-direction: column;
   padding: 2rem 0 4rem 0;
   box-sizing: border-box;
@@ -545,20 +545,20 @@ footer section {
   /*** Infos searchbar et filtre ***/
 
   .infos {
-    padding: 2rem 1rem 01rem;
+    padding: 2rem 2rem 0 2rem;
+    margin-bottom: 0;
   }
 
   .searchbar-filtre {
-    padding: 0 1rem 0 1rem;
     margin: 0;
     align-items: center;
   }
   .searchbar {
     position: relative;
-    margin-right: 0.5rem;
   }
   #recherche {
     width: 16rem;
+    border-radius: 0 15px 15px 0;
   }
   #recherche::placeholder {
     font-size: 15px;
@@ -574,7 +574,7 @@ footer section {
     height: 3rem;
     font-size: 17px;
     position: absolute;
-    right: -0.5rem;
+    right: 0;
     align-items: center;
     justify-content: center;
     background-color: #0065fc;
@@ -590,19 +590,20 @@ footer section {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
   }
 
   .barre-boutons .fa-solid {
-    font-size: 20px;
+    font-size: 18px;
   }
   .barre-boutons button {
-    width: 47%;
+    width: 35%;
     justify-content: flex-start;
     font-size: 14px;
     max-width: 15rem;
     min-width: 9rem;
     padding: 0.2rem 1rem;
-    gap: 0.8rem;
   }
 
   .alerte-infos {
